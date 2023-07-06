@@ -1,13 +1,15 @@
 <template>
-  <header class="header">
-    <nav class="nav">
-      <nuxt-link to="/" class="nav-link">Home</nuxt-link>
-      <nuxt-link to="/about" class="nav-link">About</nuxt-link>
-      <nuxt-link to="/services" class="nav-link">Services</nuxt-link>
-      <nuxt-link to="/contact" class="nav-link">Contact</nuxt-link>
-      <nuxt-link to="/blog" class="nav-link">Blog</nuxt-link>
-    </nav>
-  </header>
+  <nav class="flex items-center justify-between p-6 bg-blue-500">
+    <div>
+      <nuxt-link to="/" class="text-white text-lg font-bold">Shairz</nuxt-link>
+    </div>
+    <div>
+      <nuxt-link to="/about" class="text-white mx-3">About</nuxt-link>
+      <nuxt-link to="/services" class="text-white mx-3">Services</nuxt-link>
+      <nuxt-link to="/blog" class="text-white mx-3">Blog</nuxt-link>
+      <nuxt-link to="/contact" class="text-white mx-3">Contact</nuxt-link>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -17,15 +19,4 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  @apply bg-blue-500 text-white p-5;
-}
-
-.nav {
-  @apply flex justify-around;
-}
-
-.nav-link {
-  @apply text-lg no-underline text-white;
-}
 </style>

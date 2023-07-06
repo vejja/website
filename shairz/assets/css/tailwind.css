@@ -1,3 +1,36 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Custom styles for Shairz website */
+body {
+  @apply bg-white text-gray-800;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.header {
+  @apply py-6 flex justify-between items-center;
+}
+
+.footer {
+  @apply py-6 mt-10 border-t border-gray-200;
+}
+
+.main-content {
+  @apply mt-10;
+}
+
+.blog-post {
+  @apply mt-8 first:mt-0;
+}
+
+.blog-post-title {
+  @apply text-2xl font-semibold text-gray-900;
+}
+
+.blog-post-content {
+  @apply mt-4 text-gray-600;
+}

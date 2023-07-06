@@ -8,8 +8,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/css/tailwind.css' },
-    ],
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' }
+    ]
   },
 
   css: [
@@ -20,9 +20,7 @@ export default {
 
   components: true,
 
-  buildModules: [
-    '@nuxtjs/tailwindcss',
-  ],
+  build: {},
 
   modules: [
     '@nuxt/content',
@@ -30,5 +28,9 @@ export default {
 
   content: {},
 
-  build: {},
-};
+  target: 'static',
+
+  router: {
+    base: '/shairz/'
+  }
+}

@@ -1,26 +1,23 @@
 <template>
   <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
-    <nuxt-content :document="page" />
+    <h1 class="text-4xl font-bold mb-4">About Us</h1>
+    <div v-html="aboutContent" class="prose"></div>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-import { useNuxtContent } from '@nuxt/content'
+import { useContent } from '@nuxt/content'
 
 export default {
   async setup() {
-    const { fetch } = useNuxtContent()
-    const page = ref(null)
+    const { data: aboutContent } = await useContent('about')
 
-    page.value = await fetch('/pages/about')
-
-    return { page }
+    return {
+      aboutContent
+    }
   }
 }
 </script>
 
 <style scoped>
-@import '~/assets/css/tailwind.css';
 </style>

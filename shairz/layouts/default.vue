@@ -1,7 +1,9 @@
 <template>
-  <div class="container mx-auto px-4">
+  <div class="min-h-screen flex flex-col">
     <Header />
-    <Nuxt />
+    <main class="flex-grow">
+      <Nuxt />
+    </main>
     <Footer />
   </div>
 </template>
@@ -19,7 +21,4 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-}
 </style>

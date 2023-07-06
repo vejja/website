@@ -3,25 +3,25 @@
     <div class="container mx-auto">
       <div class="flex flex-wrap justify-between">
         <div class="w-full md:w-1/4 text-center md:text-left">
-          <h5 class="uppercase mb-6 font-bold">Links</h5>
+          <h5 class="uppercase mb-6 font-bold">Shairz</h5>
           <ul class="mb-4">
             <li class="mt-2">
-              <nuxt-link to="/" class="hover:underline">Home</nuxt-link>
+              <a href="/" class="hover:underline text-gray-400 hover:text-white">Home</a>
             </li>
             <li class="mt-2">
-              <nuxt-link to="/about" class="hover:underline">About</nuxt-link>
+              <a href="/about" class="hover:underline text-gray-400 hover:text-white">About</a>
             </li>
             <li class="mt-2">
-              <nuxt-link to="/services" class="hover:underline">Services</nuxt-link>
+              <a href="/services" class="hover:underline text-gray-400 hover:text-white">Services</a>
             </li>
             <li class="mt-2">
-              <nuxt-link to="/contact" class="hover:underline">Contact</nuxt-link>
+              <a href="/contact" class="hover:underline text-gray-400 hover:text-white">Contact</a>
             </li>
           </ul>
         </div>
         <div class="w-full md:w-1/4 text-center md:text-left">
           <h5 class="uppercase mb-6 font-bold">Legal</h5>
-          <p class="mb-4">All rights reserved by Shairz</p>
+          <p class="mb-4 text-sm">All rights reserved by Shairz 2022</p>
         </div>
       </div>
     </div>
