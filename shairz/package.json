@@ -1,0 +1,19 @@
+{
+  "name": "shairz",
+  "version": "1.0.0",
+  "description": "A standard corporate website for a start-up named shairz",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi start",
+    "generate": "nuxi generate"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxt/content": "^2.7.0",
+    "nuxt": "^3.6.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^3.0.0"
+  }
+}
