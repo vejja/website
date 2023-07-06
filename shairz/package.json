@@ -1,0 +1,19 @@
+{
+  "name": "shairz",
+  "version": "1.0.0",
+  "description": "A standard corporate website for a start-up named shairz",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@nuxt/content": "^1.14.0",
+    "nuxt3": "^3.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^2.1.0"
+  }
+}
